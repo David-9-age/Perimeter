@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perimeter Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Perimeter Calculator</h1>
+
+    <label for="shape">Choose a shape:</label>
+    <select id="shape" onchange="showInputs()">
+      <option value="square">Square</option>
+      <option value="rectangle">Rectangle</option>
+      <option value="circle">Circle</option>
+      <option value="triangle">Triangle</option>
+    </select>
+
+    <div id="inputs"></div>
+
+    <button onclick="calculatePerimeter()">Calculate</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
